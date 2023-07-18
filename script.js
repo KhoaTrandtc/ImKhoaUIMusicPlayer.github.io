@@ -41,13 +41,7 @@ const app = {
     isRepeat: false,
     config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},
     songs: [
-    {
-      name: "Nevada",
-      singer: "Vicetone",
-      path:
-        "../music/nevada.mp3",
-      image: "https://upload.wikimedia.org/wikipedia/en/d/da/Aurora_Vicetone_EP.jpg"
-    },
+
     {
       name: "Angel",
       singer: "NLE Choppa, Kodak Black, Jimin of BTS, JVKE, & Muni Long",
