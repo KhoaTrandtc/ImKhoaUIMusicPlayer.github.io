@@ -249,23 +249,30 @@ const app = {
 
         // Lắng nghe hành vi click vào playlist 
         playlist.onclick = function (e) {
-          const songNode = e.target.closest('.song:not(.active)')
-          
+          const songNode = e.target.closest('.song:not(.active)');
+        
           if (songNode || e.target.closest('.option')) {
-              // Xử lí khi click vào song 
-              if(songNode) {
-                app.currentIndex = Number(songNode.dataset.index)
-                app.loadCurrentSong()
-                audio.play()
-                app.render()
-              }
-
-              // Xử lí khi click vào option
-              if (e.target.closest('.option')) {
-
-              }
+            // Xử lí khi click vào song 
+            if (songNode) {
+              app.currentIndex = Number(songNode.dataset.index);
+              app.loadCurrentSong();
+              audio.play();
+              app.render();
             }
+        
+            // Xử lí khi click vào option
+            if (e.target.closest('.option')) {
+        
+            }
+          }
         }
+        
+        
+        
+        
+        
+        
+        
 
      
 
